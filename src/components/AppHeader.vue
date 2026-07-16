@@ -89,8 +89,8 @@ function closeMenu() {
   padding: 0.9rem 1.25rem;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+  gap: 1rem;
+  flex-wrap: nowrap;
   position: relative;
 }
 
@@ -103,6 +103,9 @@ function closeMenu() {
   gap: 0.5rem;
   text-decoration: none;
   margin-right: auto;
+
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 .pv-logo:hover {
@@ -138,6 +141,7 @@ function closeMenu() {
   align-items: center;
   gap: 1.25rem;
   flex: 1;
+  min-width: 0;
 }
 
 .pv-nav__link {
@@ -171,6 +175,10 @@ function closeMenu() {
 
 .pv-account-name {
   color: var(--pv-text-dim);
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .pixel-btn--sm {
@@ -178,7 +186,7 @@ function closeMenu() {
   font-size: 0.7rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 820px) {
   .pv-hamburger {
     display: flex;
   }
@@ -189,14 +197,19 @@ function closeMenu() {
 
   .pv-nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
     flex-direction: column;
     align-items: stretch;
-    gap: 0.75rem;
-    width: 100%;
-    padding: 1rem 0 0.5rem;
+
+    padding: 1rem;
+    background: var(--pv-bg-soft);
     border-top: 2px solid var(--pv-border);
-    margin-top: 0.75rem;
-    order: 10;
+
+    z-index: 100;
   }
 
   .pv-nav--open {

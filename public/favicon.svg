@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="600" height="660" viewBox="-300 -330 600 660">
+	<defs>
+		<radialGradient id="Gradient1" gradientUnits="userSpaceOnUse" cx="-80" cy="-110" r="400">
+			<stop stop-color="#fff" stop-opacity=".31" offset="0"/>
+			<stop stop-color="#fff" stop-opacity=".25" offset=".19"/>
+			<stop stop-color="#6b6b6b" stop-opacity=".125" offset=".6"/>
+			<stop stop-opacity=".125" offset="1"/>
+		</radialGradient>
+		<clipPath id="shield_cut"> 
+			<path id="shield" d="M-298.5,0 L0,-328.5 298.5,0 0,328.5z" style="stroke-linejoin:round"/>
+		</clipPath> 
+	</defs>
+	<g id="layer4" inkscape:label="Fond écu" inkscape:groupmode="layer">
+		<use xlink:href="#shield" fill="#e20909"/>
+	</g>
+	<g id="layer3" inkscape:label="Meubles" inkscape:groupmode="layer">
+	</g>
+	<g id="layer2" inkscape:label="Reflet final" inkscape:groupmode="layer" sodipodi:insensitive="true">
+		<use xlink:href="#shield" fill="url(#Gradient1)"/>
+	</g>
+	<g id="layer1" inkscape:label="Contour final" inkscape:groupmode="layer" sodipodi:insensitive="true">
+		<use xlink:href="#shield" style="fill:none;stroke:#000;stroke-width:3"/>
+	</g>
+</svg>
