@@ -1,6 +1,6 @@
 {
   "name": "pixelvault-front",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,7 +13,9 @@
     "format": "prettier --write --experimental-cli src/"
   },
   "dependencies": {
-    "vue": "^3.5.38"
+    "axios": "^1.7.9",
+    "vue": "^3.5.38",
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
